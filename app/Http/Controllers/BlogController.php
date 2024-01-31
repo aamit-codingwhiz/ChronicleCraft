@@ -90,7 +90,7 @@ class BlogController extends Controller
         if (auth()->user()->id !== $blog['user_id']) {
             return redirect()->back()->with('error', 'Unauthorized access');
         }
-        $post->delete();
+        $blog->delete();
         return redirect('blogs');
     }
 }
