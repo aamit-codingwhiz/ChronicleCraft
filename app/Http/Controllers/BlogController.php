@@ -36,7 +36,6 @@ class BlogController extends Controller
         ]);
 
         $incomingFields['title'] = strip_tags($incomingFields['title']);
-        $incomingFields['content'] = strip_tags($incomingFields['content']);
         $incomingFields['user_id'] = auth()->id();
         BlogPost::create($incomingFields);
         
@@ -76,7 +75,6 @@ class BlogController extends Controller
         ]);
 
         $incomingFields['title'] = strip_tags($incomingFields['title']);
-        $incomingFields['content'] = strip_tags($incomingFields['content']);
 
         $blog->update($incomingFields);
         return redirect('blogs');
