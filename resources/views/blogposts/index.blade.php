@@ -59,7 +59,7 @@
                     </div>
                     <div class="content">
                         <p>
-                            {{ substr($post->content, 0, 300) }} ...
+                            {!! substr($post->content, 0, 300) !!} ...
                         </p>
                     </div>
                     <div class="extra content">

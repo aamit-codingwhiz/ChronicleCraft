@@ -46,6 +46,16 @@
         </div>
 
         @yield('content')
+        <script src="https://cdn.ckeditor.com/ckeditor5/38.1.0/classic/ckeditor.js"></script>
+        <script>
+            ClassicEditor
+                .create(document.querySelector("#myTextarea"))
+                .catch(error => {
+                    console.error(error);
+                });
+        </script>
+
+
     </div>
 </body>
 

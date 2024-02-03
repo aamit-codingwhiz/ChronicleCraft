@@ -9,7 +9,7 @@
             <span>created {{ \Carbon\Carbon::parse($blog->user->created_at)->format('F j, Y | g:i A') }}</span>
         </div>
         <div class="ui content">
-            {{ $blog->content }}
+            {!! $blog->content !!}
 
         </div>
     </div>

@@ -14,7 +14,7 @@
             </div>
             <div class="field">
                 <label>Content</label>
-            <textarea name="content" placeholder="body content..."></textarea>
+            <textarea id="myTextarea" name="content" placeholder="body content..."></textarea>
             </div>
             <button class="ui positive button" type="submit">
                 Save
